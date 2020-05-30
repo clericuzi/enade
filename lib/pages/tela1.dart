@@ -9,9 +9,10 @@ class Tela1 extends StatelessWidget {
       body: ListView(
         padding:  EdgeInsets.all(32.0),
         children: <Widget>[
-          const SizedBox(height: 20), //espaço entre linhas
-          Image.asset('image/pena.png',),
-          const SizedBox(height: 50), //espaço entre linhas
+          Container(
+            child: Image.asset('image/pena.png'),
+            padding: EdgeInsets.only(top: 20, bottom: 50),
+          ),
           Text ('Pratique as questões de TI do Enade do Curso de Secretariado Executivo  \n \n \n',
             textAlign: TextAlign.center, style: TextStyle(fontSize: 17.0),),
 
